@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mic_button_size">76dp</dimen>
+    <dimen name="avatar_size">120dp</dimen>
+    <dimen name="bubble_size">56dp</dimen>
+    <dimen name="corner_radius">18dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <dimen name="spacing_m">16dp</dimen>
+    <dimen name="spacing_l">24dp</dimen>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_m">
+
+        <TextView style="@style/SectionHeader" android:layout_marginTop="0dp" android:text="My Preferences" />
+
+        <EditText android:id="@+id/inputPreferredName" style="@style/EditorField" android:hint="Preferred name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:text="Language"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+        <Spinner android:id="@+id/spinnerLanguage" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:text="Response length"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+        <Spinner android:id="@+id/spinnerResponseLength" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <EditText android:id="@+id/inputPreferredTone" style="@style/EditorField" android:hint="Preferred tone (e.g. santai, to the point)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:text="Emoji level"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+        <Spinner android:id="@+id/spinnerEmojiLevel" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <Switch android:id="@+id/switchVoiceEnabled" style="@style/EditorField" android:text="Voice enabled" android:textColor="@color/text_primary" />
+        <Switch android:id="@+id/switchAutoSpeak" style="@style/EditorField" android:text="Auto speak" android:textColor="@color/text_primary" />
+        <Switch android:id="@+id/switchMemoryEnabled" style="@style/EditorField" android:text="Memory enabled" android:textColor="@color/text_primary" />
+
+        <Button
+            android:id="@+id/savePreferencesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:text="Simpan Preferences" />
+
+        <Button
+            android:id="@+id/deleteMyDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:backgroundTint="@color/danger"
+            android:text="Hapus data preferences saya" />
+
+    </LinearLayout>
+</ScrollView>

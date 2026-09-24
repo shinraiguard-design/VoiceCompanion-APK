@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="380dp"
+    android:background="@color/surface_dark"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_s">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/miniStatusText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:text="@string/status_idle" />
+
+        <ImageButton
+            android:id="@+id/miniPowerButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_lock_power_off"
+            android:contentDescription="AI ON/OFF" />
+
+        <ImageButton
+            android:id="@+id/miniOpenAppButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_view"
+            android:contentDescription="Buka app" />
+
+        <ImageButton
+            android:id="@+id/miniCloseButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Tutup" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/miniTranscriptRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/miniStopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_m"
+            android:backgroundTint="@color/danger"
+            android:text="Stop"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/miniMicButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_mic_button"
+            android:src="@drawable/ic_mic"
+            android:contentDescription="@string/btn_mic_hint" />
+    </LinearLayout>
+
+</LinearLayout>

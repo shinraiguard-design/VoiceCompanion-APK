@@ -1,0 +1,2 @@
+-keep class com.companionai.voiceapp.data.** { *; }
+-keep class com.google.mediapipe.** { *; }

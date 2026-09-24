@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Voice Companion</string>
+    <string name="settings_title">Persona &amp; Model</string>
+    <string name="status_idle">Diam</string>
+    <string name="status_listening">Mendengarkan…</string>
+    <string name="status_thinking">Memproses…</string>
+    <string name="status_speaking">Berbicara…</string>
+    <string name="status_offline">AI nonaktif</string>
+    <string name="status_error">Error</string>
+    <string name="btn_mic_hint">Tekan untuk bicara</string>
+    <string name="notif_channel_name">Companion aktif</string>
+    <string name="notif_title_active">Voice Companion aktif</string>
+    <string name="notif_action_turn_off">Matikan AI</string>
+    <string name="overlay_permission_needed">Izin \"Tampil di atas aplikasi lain\" dibutuhkan untuk floating bubble</string>
+    <string name="model_not_loaded">Model belum dipilih. Buka Settings untuk import model .task</string>
+</resources>
