@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!-- Header -->
+    <View
+        android:id="@+id/avatarView"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:background="@drawable/bg_avatar_circle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/aiNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_s"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Luna"
+        app:layout_constraintTop_toBottomOf="@id/avatarView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/statusRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/aiNameText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/statusDot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_status_dot" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:text="@string/status_idle" />
+    </LinearLayout>
+
+    <!-- AI master switch -->
+    <LinearLayout
+        android:id="@+id/aiPowerRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_s"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/aiPowerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="AI"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+
+        <Switch
+            android:id="@+id/aiPowerSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/spacing_s"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/settings_title"
+        android:src="@android:drawable/ic_menu_manage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Transkrip -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transcriptRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_s"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/spacing_m"
+        android:paddingBottom="@dimen/spacing_s"
+        app:layout_constraintTop_toBottomOf="@id/statusRow"
+        app:layout_constraintBottom_toTopOf="@id/inputBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Text input bar -->
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_m"
+        android:layout_marginBottom="@dimen/spacing_s"
+        android:background="@drawable/bg_bubble_ai"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="4dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@id/controlsRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/textInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Ketik pesan…"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:maxLines="3"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Kirim"
+            android:src="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+
+    <!-- Stop + Mic controls -->
+    <LinearLayout
+        android:id="@+id/controlsRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_l"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_l"
+            android:backgroundTint="@color/danger"
+            android:text="Stop" />
+
+        <ImageButton
+            android:id="@+id/micButton"
+            android:layout_width="@dimen/mic_button_size"
+            android:layout_height="@dimen/mic_button_size"
+            android:background="@drawable/bg_mic_button"
+            android:contentDescription="@string/btn_mic_hint"
+            android:elevation="6dp"
+            android:src="@drawable/ic_mic" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_m">
+
+        <!-- Identity -->
+        <TextView style="@style/SectionHeader" android:text="Identity" />
+        <EditText android:id="@+id/inputName" style="@style/EditorField" android:hint="Name*" />
+        <EditText android:id="@+id/inputNickname" style="@style/EditorField" android:hint="Nickname" />
+        <EditText android:id="@+id/inputDescription" style="@style/EditorFieldMultiline" android:hint="Description" />
+
+        <!-- Personality -->
+        <TextView style="@style/SectionHeader" android:text="Personality" />
+        <EditText android:id="@+id/inputPersonality" style="@style/EditorFieldMultiline" android:hint="Personality (e.g. friendly, playful, calm)" />
+        <EditText android:id="@+id/inputSpeakingStyle" style="@style/EditorField" android:hint="Speaking Style" />
+        <EditText android:id="@+id/inputTone" style="@style/EditorField" android:hint="Tone (e.g. warm, calm, professional)" />
+        <EditText android:id="@+id/inputMood" style="@style/EditorField" android:hint="Mood" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:text="Language"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Backstory -->
+        <TextView style="@style/SectionHeader" android:text="Backstory" />
+        <EditText android:id="@+id/inputBackstory" style="@style/EditorFieldMultiline" android:hint="Backstory" />
+        <EditText android:id="@+id/inputLikes" style="@style/EditorField" android:hint="Likes" />
+        <EditText android:id="@+id/inputDislikes" style="@style/EditorField" android:hint="Dislikes" />
+
+        <!-- Behavior -->
+        <TextView style="@style/SectionHeader" android:text="Behavior Rules" />
+        <EditText android:id="@+id/inputBehaviorRules" style="@style/EditorFieldMultiline" android:hint="How should this character respond?" />
+        <EditText android:id="@+id/inputNeverDoRules" style="@style/EditorFieldMultiline" android:hint="What should this character never do?" />
+        <EditText android:id="@+id/inputConversationRules" style="@style/EditorFieldMultiline" android:hint="Conversation Rules" />
+        <EditText android:id="@+id/inputGreeting" style="@style/EditorFieldMultiline" android:hint="Greeting" />
+
+        <!-- Response tuning -->
+        <TextView style="@style/SectionHeader" android:text="Response Tuning" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Response length"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+        <Spinner
+            android:id="@+id/spinnerResponseLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:text="Emoji level"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+        <Spinner
+            android:id="@+id/spinnerEmojiLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Advanced -->
+        <TextView style="@style/SectionHeader" android:text="Advanced System Prompt" />
+        <Switch
+            android:id="@+id/switchAdvancedPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gunakan Advanced System Prompt (override auto-build di atas)"
+            android:textColor="@color/text_primary" />
+        <EditText android:id="@+id/inputSystemInstructions" style="@style/EditorFieldMultiline" android:hint="System Instructions" />
+        <EditText android:id="@+id/inputCustomPrompt" style="@style/EditorFieldMultiline" android:hint="Custom Prompt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Catatan: aturan dasar keamanan aplikasi tetap ditambahkan otomatis di luar ini dan tidak bisa dihapus dari sini."
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/saveCharacterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:text="Simpan Karakter" />
+
+        <Button
+            android:id="@+id/resetCharacterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:text="Reset ke Default (kalau karakter bawaan)" />
+
+    </LinearLayout>
+</ScrollView>

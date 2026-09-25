@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/drawable_bg_bubble_user.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/drawable/bg_bubble_user.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/xml_data_extraction_rules.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_view_mini_chat.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/view_mini_chat.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/drawable_bg_mic_button.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/drawable/bg_mic_button.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_item_message_ai.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/item_message_ai.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/drawable_ic_floating_bubble.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/drawable/ic_floating_bubble.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/xml_backup_rules.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/drawable_bg_avatar_circle.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/drawable/bg_avatar_circle.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/drawable_ic_mic.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/drawable/ic_mic.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_activity_settings.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_activity_character_editor.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/activity_character_editor.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_activity_main.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/mipmap_ic_launcher.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/mipmap/ic_launcher.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_item_message_user.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/item_message_user.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_item_character.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/item_character.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_activity_characters.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/activity_characters.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_activity_preferences.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/activity_preferences.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/drawable_bg_bubble_ai.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/drawable/bg_bubble_ai.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/layout_view_floating_bubble.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/layout/view_floating_bubble.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/mipmap_ic_launcher_foreground.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/mipmap/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.companionai.voiceapp-debug-42:/drawable_bg_status_dot.xml.flat",
+        "source": "com.companionai.voiceapp-main-44:/drawable/bg_status_dot.xml"
+    }
+]

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="accent_primary">#7C5CFF</color>
+    <color name="accent_secondary">#39D0D8</color>
+    <color name="bg_dark">#0F1115</color>
+    <color name="bubble_ai">#2A2140</color>
+    <color name="bubble_user">#2C3140</color>
+    <color name="danger">#FF5C5C</color>
+    <color name="status_idle">#4A4F5C</color>
+    <color name="status_listening">#39D0D8</color>
+    <color name="status_speaking">#7C5CFF</color>
+    <color name="status_thinking">#F7B84B</color>
+    <color name="surface_dark">#1A1D24</color>
+    <color name="surface_light">#242832</color>
+    <color name="text_primary">#F2F3F7</color>
+    <color name="text_secondary">#9AA0AC</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="avatar_size">120dp</dimen>
+    <dimen name="bubble_size">56dp</dimen>
+    <dimen name="corner_radius">18dp</dimen>
+    <dimen name="mic_button_size">76dp</dimen>
+    <dimen name="spacing_l">24dp</dimen>
+    <dimen name="spacing_m">16dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <string name="app_name">Voice Companion</string>
+    <string name="btn_mic_hint">Tekan untuk bicara</string>
+    <string name="model_not_loaded">Model belum dipilih. Buka Settings untuk import model .task</string>
+    <string name="notif_action_turn_off">Matikan AI</string>
+    <string name="notif_channel_name">Companion aktif</string>
+    <string name="notif_title_active">Voice Companion aktif</string>
+    <string name="overlay_permission_needed">Izin \"Tampil di atas aplikasi lain\" dibutuhkan untuk floating bubble</string>
+    <string name="settings_title">Persona &amp; Model</string>
+    <string name="status_error">Error</string>
+    <string name="status_idle">Diam</string>
+    <string name="status_listening">Mendengarkan…</string>
+    <string name="status_offline">AI nonaktif</string>
+    <string name="status_speaking">Berbicara…</string>
+    <string name="status_thinking">Memproses…</string>
+    <style name="EditorField">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_s</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+    </style>
+    <style name="EditorFieldMultiline" parent="EditorField">
+        <item name="android:minLines">2</item>
+        <item name="android:gravity">top</item>
+        <item name="android:inputType">textMultiLine|textCapSentences</item>
+    </style>
+    <style name="SectionHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_l</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Theme.VoiceCompanion" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_primary</item>
+        <item name="colorPrimaryDark">@color/bg_dark</item>
+        <item name="colorAccent">@color/accent_secondary</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="23">false</item>
+    </style>
+</resources>

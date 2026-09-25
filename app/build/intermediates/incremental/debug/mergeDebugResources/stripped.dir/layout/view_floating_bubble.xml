@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/bubble_size"
+    android:layout_height="@dimen/bubble_size">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_avatar_circle"
+        android:elevation="8dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_floating_bubble" />
+
+    <View
+        android:id="@+id/bubbleStatusDot"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="top|end"
+        android:background="@drawable/bg_status_dot" />
+</FrameLayout>
